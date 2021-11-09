@@ -15,6 +15,8 @@ body {
   font-family: "Open Sans", serif;
   font-style: normal;
   font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .img {
@@ -390,7 +392,7 @@ template {
   border-color: #1565D8;
   background-color: #fff;
 }
-.navbar-menu__burger {
+.navbar-burger {
   display: none;
 }
 .navbar-list {
@@ -413,6 +415,82 @@ template {
   width: 90px;
 }
 
+.header {
+  padding: 46px 0 56px 0;
+}
+.header-book {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-book__about {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 585px;
+}
+.header-book__name {
+  margin: 0;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+}
+.header-book__name_yellow {
+  color: #FAAD13;
+}
+.header-book__author {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-top: 28px;
+  margin-bottom: 36px;
+}
+.header-book__description {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5A7184;
+  text-align: left;
+  margin-bottom: 36px;
+  margin-top: 0;
+}
+.header-book__buttonarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.header-book__button {
+  font-size: 16px;
+  line-height: 22px;
+  border-color: #1565D8;
+}
+.header-book__button_blue {
+  margin-right: 26px;
+  background-color: #1565D8;
+  color: #FFFFFF;
+  padding: 18px 36px;
+}
+.header-book__button_white {
+  background-color: #FFFFFF;
+  color: #1565D8;
+  padding: 17px 50px;
+}
+
+.book-cover {
+  padding: 103px 119px;
+  background-color: #B3BAC5;
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -446,7 +524,7 @@ template {
   .navbar-menu {
     display: none;
   }
-  .navbar-menu__burger {
+  .navbar-burger {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -458,7 +536,7 @@ template {
     background-color: #fff;
     cursor: pointer;
   }
-  .navbar-menu__line {
+  .navbar-burger__line {
     width: 22px;
     height: 2.2px;
     background-color: #3A4C66;
