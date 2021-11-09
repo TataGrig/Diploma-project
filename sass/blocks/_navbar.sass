@@ -24,6 +24,11 @@
 			color: $button-color
 			border-color: $button-color
 			background-color: #fff
+		&__list
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			width: 672px
 	&-burger
 		display: none
 	&-list
@@ -34,11 +39,13 @@
 		margin: 0
 		justify-content: space-between
 		align-items: center
-		font-style: normal
-		font-weight: 600
-		font-size: 16px
-		line-height: 22px
 		padding: 0
 		width: 270px
+		&__item
+			font-style: normal
+			font-weight: 600
+			font-size: 16px
+			line-height: 22px
+			color: $text-color
 .logo
 	width: 90px

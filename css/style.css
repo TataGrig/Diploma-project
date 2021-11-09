@@ -6,6 +6,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.body_stop_scrolling {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
@@ -392,6 +396,12 @@ template {
   border-color: #1565D8;
   background-color: #fff;
 }
+.navbar-menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 672px;
+}
 .navbar-burger {
   display: none;
 }
@@ -403,12 +413,15 @@ template {
   margin: 0;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
+  width: 270px;
+}
+.navbar-list__item {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  padding: 0;
-  width: 270px;
+  color: #183B56;
 }
 
 .logo {
@@ -509,6 +522,8 @@ template {
   }
   .navbar-list {
     width: 230px;
+  }
+  .navbar-list__item {
     font-size: 14px;
   }
 }
@@ -518,11 +533,46 @@ template {
     width: 92%;
   }
 
+  body {
+    padding-top: 80px;
+  }
+
   .navbar {
     padding: 18px 0;
   }
   .navbar-menu {
     display: none;
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #183B56;
+    padding: 0;
+  }
+  .navbar-menu_visible {
+    display: block;
+  }
+  .navbar-menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar-menu__button {
+    font-size: 18px;
+  }
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .navbar-list__item {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
   }
   .navbar-burger {
     display: flex;
@@ -541,11 +591,11 @@ template {
     height: 2.2px;
     background-color: #3A4C66;
   }
-  .navbar_mobile_fixed {
+  .navbar-mobile {
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 120;
   }
 }/*# sourceMappingURL=style.css.map */
