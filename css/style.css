@@ -503,8 +503,7 @@ template {
 
 .book-cover {
   padding: 103px 119px;
-  background-color: #B3BAC5;
-  opacity: 0.1;
+  background-color: rgba(179, 186, 197, 0.1);
 }
 .book-cover__image {
   object-fit: cover;
@@ -569,9 +568,9 @@ template {
   grid-row: 5/6;
   grid-column: span 2;
   padding: 26px 285px;
-  background-color: #1565D8;
-  opacity: 0.1;
+  background-color: rgba(21, 101, 216, 0.1);
   border-radius: 8px;
+  border: none;
 }
 .best-button__name {
   font-family: Roboto Condensed;
@@ -635,17 +634,21 @@ template {
   margin-right: 25px;
 }
 .recommend__book-like {
-  background-color: #EC1F46;
-  width: 16px;
-  height: 15px;
+  fill: #959EAD;
+  width: 18px;
+  height: 21px;
 }
+.recommend__book-like_red {
+  fill: #EC1F46;
+}
+
 .top {
   grid-row: 2/6;
   display: flex;
   flex-direction: column;
   padding: 24px 24px;
   border-radius: 8px;
-  background-color: #B3BAC5;
+  background-color: rgba(179, 186, 197, 0.1);
 }
 .top__item {
   display: flex;
@@ -661,6 +664,19 @@ template {
 .top-about {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.top-button {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #1565D8;
+  border: none;
+  background-color: rgba(179, 186, 197, 0);
 }
 .top__book-name {
   font-family: Roboto;
@@ -671,6 +687,7 @@ template {
   letter-spacing: 0.2px;
   color: #183B56;
   margin-bottom: 15px;
+  margin-top: 0;
 }
 .top__book-price {
   font-family: Roboto Condensed;
@@ -701,6 +718,12 @@ template {
   width: 312px;
   height: 1px;
   margin-bottom: 25px;
+}
+
+.icon {
+  fill: #959EAD;
+  width: 18px;
+  height: 21px;
 }
 
 @media (max-width: 1200px) {

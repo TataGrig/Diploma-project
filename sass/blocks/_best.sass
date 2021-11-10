@@ -47,9 +47,9 @@
 		grid-row: 5 / 6
 		grid-column: span 2
 		padding: 26px 285px
-		background-color: #1565D8
-		opacity: 0.1
+		background-color: rgb(21, 101, 216, 0.1)
 		border-radius: 8px
+		border: none
 		&__name
 			font-family: Roboto Condensed
 			font-style: normal
@@ -105,19 +105,18 @@
 			border-radius: 2000px
 			margin-right: 25px
 		&-like
-			background-color: #EC1F46
-			width: 16px
-			height: 15px
+			fill: #959EAD
+			width: 18px
+			height: 21px
 			&_red
-
+				fill: #EC1F46
 .top
 	grid-row: 2 / 6
 	display: flex
 	flex-direction: column
 	padding: 24px 24px
 	border-radius: 8px
-	background-color: #B3BAC5
-	// opacity: 0.1
+	background-color: rgb(179, 186, 197, 0.1)
 	&__item
 		display: flex
 		flex-direction: row
@@ -129,7 +128,18 @@
 	&-about
 		display: flex
 		flex-direction: column
-		// align-items: center
+		align-items: flex-start
+		justify-content: center
+	&-button
+		font-family: Roboto Condensed
+		font-style: normal
+		font-weight: bold
+		font-size: 16px
+		line-height: 20px
+		letter-spacing: 0.2px
+		color: #1565D8
+		border: none
+		background-color: rgb(179, 186, 197, 0.0)
 	&__book
 		&-name
 			font-family: Roboto
@@ -140,6 +150,7 @@
 			letter-spacing: 0.2px
 			color: #183B56
 			margin-bottom: 15px
+			margin-top: 0
 		&-price
 			font-family: Roboto Condensed
 			font-style: normal
@@ -166,3 +177,7 @@
 	width: 312px
 	height: 1px
 	margin-bottom: 25px
+.icon
+	fill: #959EAD
+	width: 18px
+	height: 21px
