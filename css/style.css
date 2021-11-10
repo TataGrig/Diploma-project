@@ -430,7 +430,7 @@ template {
 }
 
 .header {
-  padding: 50px 0 56px 0;
+  padding: 50px 0 100px 0;
 }
 .header-book {
   display: flex;
@@ -503,11 +503,191 @@ template {
 
 .book-cover {
   padding: 103px 119px;
-  background-color: #E5E5E5;
+  background-color: #B3BAC5;
+  opacity: 0.1;
 }
 .book-cover__image {
   object-fit: cover;
   overflow: hidden;
+}
+
+.best-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  grid-template-rows: repeat(5, min-content);
+  grid-row-gap: 32px;
+  grid-column-gap: 32px;
+  align-items: start;
+}
+.best__title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin: 0;
+}
+.best__title_recommend {
+  grid-row: 1/2;
+  grid-column: span 2;
+}
+.best-recommend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 26px 9px 11px;
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+}
+.best-recommend_first {
+  grid-row: 2/3;
+}
+.best-recommend_second {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.best-recommend_third {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+.best-recommend_forth {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.best-recommend_fifth {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+.best-recommend_sixth {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+.best-button {
+  grid-row: 5/6;
+  grid-column: span 2;
+  padding: 26px 285px;
+  background-color: #1565D8;
+  opacity: 0.1;
+  border-radius: 8px;
+}
+.best-button__name {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #1565D8;
+}
+
+.recommend-image {
+  border-radius: 8px;
+}
+.recommend__image {
+  margin-right: 20px;
+}
+.recommend__book-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #183B56;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.recommend__book-category {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+  margin-bottom: 24px;
+}
+.recommend__book-price {
+  display: block;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1565D8;
+  margin-bottom: 24px;
+}
+.recommend__book-buy {
+  display: flex;
+}
+.recommend__book-button {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 7px 20px;
+  color: #FFFFFF;
+  background-color: #183B56;
+  border-radius: 2000px;
+  margin-right: 25px;
+}
+
+.top {
+  grid-row: 2/6;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px;
+  border-radius: 8px;
+  background-color: #B3BAC5;
+}
+.top__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 36px;
+}
+.top-image {
+  border-radius: 5.96628px;
+}
+.top__image {
+  margin-right: 26px;
+}
+.top-about {
+  display: flex;
+  flex-direction: column;
+}
+.top__book-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-bottom: 15px;
+}
+.top__book-price {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1565D8;
+  margin-bottom: 22px;
+}
+.top__book-button {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 7px 20px;
+  color: #FFFFFF;
+  background-color: #183B56;
+  border-radius: 2000px;
+  margin-right: 25px;
 }
 
 @media (max-width: 1200px) {

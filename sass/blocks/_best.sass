@@ -1,0 +1,155 @@
+.best
+	&-wrapper
+		display: grid
+		grid-template-columns: repeat(3, minmax(min-content, 1fr))
+		grid-template-rows: repeat(5, min-content)
+		grid-row-gap: 32px
+		grid-column-gap: 32px
+		align-items: start
+	&__title
+		font-family: Roboto Condensed
+		font-style: normal
+		font-weight: bold
+		font-size: 32px
+		line-height: 40px
+		letter-spacing: 0.2px
+		color: #183B56
+		margin: 0
+		&_recommend
+			grid-row: 1 / 2
+			grid-column: span 2
+	&-recommend
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		padding: 11px 26px 9px 11px
+		border: 1px solid #ECEEF2
+		border-radius: 8px
+		&_first
+			grid-row: 2 / 3
+		&_second
+			grid-row: 2 / 3
+			grid-column: 2 / 3
+		&_third
+			grid-row: 3 / 4
+			grid-column: 1 / 2
+		&_forth
+			grid-row: 3 / 4
+			grid-column: 2 / 3
+		&_fifth
+			grid-row: 4 / 5
+			grid-column: 1 / 2
+		&_sixth
+			grid-row: 4 / 5
+			grid-column: 2 / 3
+	&-button
+		grid-row: 5 / 6
+		grid-column: span 2
+		padding: 26px 285px
+		background-color: #1565D8
+		opacity: 0.1
+		border-radius: 8px
+		&__name
+			font-family: Roboto Condensed
+			font-style: normal
+			font-weight: bold
+			font-size: 16px
+			line-height: 20px
+			letter-spacing: 0.2px
+			color: #1565D8
+.recommend
+	&-image
+		border-radius: 8px
+	&__image
+		margin-right: 20px
+	&__book
+		&-name
+			font-family: Roboto
+			font-style: normal
+			font-weight: 500
+			font-size: 22px
+			line-height: 32px
+			color: #183B56
+			margin-top: 0
+			margin-bottom: 16px
+		&-category
+			font-family: Open Sans
+			font-style: normal
+			font-weight: normal
+			font-size: 16px
+			line-height: 22px
+			color: #183B56
+			margin-bottom: 24px
+		&-price
+			display: block
+			font-family: Roboto Condensed
+			font-style: normal
+			font-weight: bold
+			font-size: 20px
+			line-height: 24px
+			color: #1565D8
+			margin-bottom: 24px
+		&-buy
+			display: flex
+		&-button
+			font-family: Open Sans
+			font-style: normal
+			font-weight: bold
+			font-size: 16px
+			line-height: 22px
+			padding: 7px 20px
+			color: #FFFFFF
+			background-color: #183B56
+			border-radius: 2000px
+			margin-right: 25px
+.top
+	grid-row: 2 / 6
+	display: flex
+	flex-direction: column
+	padding: 24px 24px
+	border-radius: 8px
+	background-color: #B3BAC5
+	// opacity: 0.1
+	&__item
+		display: flex
+		flex-direction: row
+		margin-bottom: 36px
+	&-image
+		border-radius: 5.96628px
+	&__image
+		margin-right: 26px
+	&-about
+		display: flex
+		flex-direction: column
+		// align-items: center
+	&__book
+		&-name
+			font-family: Roboto
+			font-style: normal
+			font-weight: 500
+			font-size: 22px
+			line-height: 32px
+			letter-spacing: 0.2px
+			color: #183B56
+			margin-bottom: 15px
+		&-price
+			font-family: Roboto Condensed
+			font-style: normal
+			font-weight: bold
+			font-size: 20px
+			line-height: 24px
+			letter-spacing: 0.2px
+			color: #1565D8
+			margin-bottom: 22px
+		&-button
+			font-family: Open Sans
+			font-style: normal
+			font-weight: bold
+			font-size: 16px
+			line-height: 22px
+			padding: 7px 20px
+			color: #FFFFFF
+			background-color: #183B56
+			border-radius: 2000px
+			margin-right: 25px
