@@ -386,11 +386,11 @@ template {
   padding: 13px 0 13px 205px;
 }
 .navbar-menu__button {
-  padding: 13px 27px;
+  padding: 13px 30px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21, 79px;
   border: 2px solid;
   border-radius: 8px;
   color: #1565D8;
@@ -401,7 +401,7 @@ template {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 672px;
+  width: 660px;
 }
 .navbar-burger {
   display: none;
@@ -415,7 +415,7 @@ template {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  width: 270px;
+  width: 253px;
 }
 .navbar-list__item {
   font-style: normal;
@@ -430,7 +430,7 @@ template {
 }
 
 .header {
-  padding: 46px 0 56px 0;
+  padding: 50px 0 56px 0;
 }
 .header-book {
   display: flex;
@@ -476,7 +476,7 @@ template {
   line-height: 32px;
   color: #5A7184;
   text-align: left;
-  margin-bottom: 36px;
+  margin-bottom: 54px;
   margin-top: 0;
 }
 .header-book__buttonarea {
@@ -583,7 +583,7 @@ template {
   }
 
   body {
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .navbar {
@@ -706,7 +706,7 @@ template {
   }
   .header-book__description {
     line-height: 23px;
-    margin-bottom: 17px;
+    margin-bottom: 12px;
   }
 
   .book-cover {
@@ -754,7 +754,7 @@ template {
   }
   .header-book__button_white {
     margin-top: 15px;
-    padding: 9px 29px;
+    padding: 7px 29px;
   }
 
   .book-cover {
