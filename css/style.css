@@ -620,6 +620,7 @@ template {
 }
 .recommend__book-buy {
   display: flex;
+  align-items: center;
 }
 .recommend__book-button {
   font-family: Open Sans;
@@ -633,7 +634,11 @@ template {
   border-radius: 2000px;
   margin-right: 25px;
 }
-
+.recommend__book-like {
+  background-color: #EC1F46;
+  width: 16px;
+  height: 15px;
+}
 .top {
   grid-row: 2/6;
   display: flex;
@@ -688,6 +693,14 @@ template {
   background-color: #183B56;
   border-radius: 2000px;
   margin-right: 25px;
+}
+
+.rectangle {
+  border: 1px solid #ECEEF2;
+  margin-top: -10px;
+  width: 312px;
+  height: 1px;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 1200px) {

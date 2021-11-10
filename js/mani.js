@@ -8,3 +8,11 @@ const menuButton = document.querySelector(".navbar-burger");
     const body = document.querySelector("body");
     body.classList.toggle("body_stop_scrolling");
   });
+
+const likeButton = document.querySelector(".recommend__book-like");
+
+  likeButton.addEventListener('click', 
+  function () {
+    console.log('Клик по кнопке меню');
+    likeButton.classList.toggle("recommend__book-like_red");
+  });
