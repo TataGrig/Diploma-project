@@ -8,6 +8,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -83,7 +84,7 @@
 					<img class="recommend-image recommend__image" src="img/best/recommend/educated.jpg"
 						alt="Book: Educated: a Memoir">
 					<div class="recommend-about">
-						<h3 class="recommend__book-name">Educated: a Memoir</h3>
+						<h3 class="recommend__book-name recommend__book-name_second">Educated: a Memoir</h3>
 						<p class="recommend__book-category">Education</p>
 						<span class="recommend__book-price">$28.00</span>
 						<div class="recommend__book-buy">
@@ -155,10 +156,10 @@
 					</div>
 					<div class="recommend-description"></div>
 				</div>
-				<button class="best-button"><span class="best-button__name">БОЛЬШЕ РЕКОМЕНДАЦИЙ</span>
+				<button class="best-button"><span class="best-button__name">Больше рекомендаций</span>
 				</button>
 				<div class="top">
-					<div class="top__item">
+					<div class="top__item top__item_first">
 						<img src="img/best/top/sprint.jpg" alt="Book: Sprint : Solve, Test in 5 Days" class="top-image top__image">
 						<div class="top-about">
 							<h3 class="top__book-name">Sprint: Solve, Test in 5 Days</h3>
@@ -166,7 +167,7 @@
 							<button class="top__book-button">Купить</button>
 						</div>
 					</div>
-					<div class="top__item">
+					<div class="top__item top__item_second">
 						<img src="img/best/top/hacking.jpg" alt="Book: Hacking Growth Break Problem" class="top-image top__image">
 						<div class="top-about">
 							<h3 class="top__book-name">Hacking Growth Break Problem</h3>
@@ -174,7 +175,7 @@
 							<button class="top__book-button">Купить</button>
 						</div>
 					</div>
-					<div class="top__item">
+					<div class="top__item top__item_third">
 						<img src="img/best/top/very-nice.jpg" alt="Book: Very Nice a Novel by Mercy" class="top-image top__image">
 						<div class="top-about">
 							<h3 class="top__book-name">Very Nice a Novel by Mercy</h3>
@@ -182,7 +183,7 @@
 							<button class="top__book-button">Купить</button>
 						</div>
 					</div>
-					<div class="top__item">
+					<div class="top__item top__item_forth">
 						<img src="img/best/top/hooked.jpg" alt="Book: Hooked : How to Build Products" class="top-image top__image">
 						<div class="top-about">
 							<h3 class="top__book-name">Hooked : How to Build Products</h3>
@@ -197,7 +198,79 @@
 		</div>
 	</section>
 	<!-- /.best -->
-	<script src="js/mani.js"></script>
+
+	<section class="categories">
+		<div class="container">
+			<div class="categories-wrapper">
+				<!-- Slider main container -->
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="swiper-slide__content">
+								<img class="swiper-slide__icon" src="img/categories/iconspace_Presentation Chart Up.svg"
+									alt="Categories slide icon" />
+								<p4 class="swiper-slide__title">Бизнес & Финансы</p4>
+								<p class="swiper-slide__discription">Книги про мир бизнеса</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__content">
+								<img class="swiper-slide__icon" src="img/categories/iconspace_Diamond.svg" alt="Categories slide icon" />
+								<p4 class="swiper-slide__title">Самомотиватия</p4>
+								<p class="swiper-slide__discription">Книги о мотивации</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__content">
+								<img class="swiper-slide__icon" src="img/categories/iconspace_Book_3.svg" alt="Categories slide icon" />
+								<p4 class="swiper-slide__title">Романы Теленовеллы</p4>
+								<p class="swiper-slide__discription">
+									Книги с крутыми историями
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__content">
+								<img class="swiper-slide__icon" src="img/categories/iconspace_Group.svg" alt="Categories slide icon" />
+								<p4 class="swiper-slide__title">Навыки будущего</p4>
+								<p class="swiper-slide__discription">
+									Книги для самоподготовки
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__content">
+								<img class="swiper-slide__icon" src="img/categories/iconspace_Presentation Chart Up.svg"
+									alt="Categories slide icon" />
+								<p4 class="swiper-slide__title">Верстка сайтов</p4>
+								<p class="swiper-slide__discription">
+									Книги о том как верстать играючи
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-slide__content">
+								<img class="swiper-slide__icon" src="img/categories/iconspace_Presentation Chart Up.svg"
+									alt="Categories slide icon" />
+								<p4 class="swiper-slide__title">Садоводство</p4>
+								<p class="swiper-slide__discription">
+									Книги о том как вырастить охрененный редис
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-arrow swiper-arrow--left"></div>
+				<div class="swiper-arrow swiper-arrow--right"></div>
+			</div>
+		</div>
+	</section>
+	<!-- /.categories -->
+	
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

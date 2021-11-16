@@ -1,0 +1,61 @@
+.swiper
+  // margin-top: 60px
+  width: 100%
+  min-height: 240px
+  overflow: hidden
+  position: relative
+  &-slide
+    width: 265px
+    min-height: 100%
+    border: 1px solid #ECEEF2
+    border-radius: 8px
+    padding: 40px 0 30px 0
+    &__content
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__title
+      margin: 40px 0 0 0
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: #183B56
+    &__discription
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      color: #5A7184
+      text-align: center
+      margin: 12px 10px 0 10px
+  &-arrow
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    border-radius: 50%
+    z-index: 99
+    width: 56px
+    height: 56px
+    border: none
+    cursor: pointer
+    background-color: #fff
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 18px
+    -moz-box-shadow: -1px 4px 12px #000000
+    -webkit-box-shadow: -1px 4px 12px #000000
+    box-shadow: -1px 4px 12px #000000
+    &--left
+      left: -28px
+      background-image: url(../img/categories/left-arrow.svg)
+    &--right
+      right: -28px
+      background-image: url(../img/categories/right-arrow.svg)
+.categories
+  &-wrapper
+    position: relative
+    margin-top: 60px

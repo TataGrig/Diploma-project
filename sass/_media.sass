@@ -11,6 +11,43 @@
 	.book
 		&-cover
 			padding: 80px 80px
+	.best
+		&-wrapper
+			grid-template-columns: repeat(2, 1fr)
+			grid-template-rows: repeat(8, min-content)
+		&__title
+			&_top
+				grid-row: 6 / 7
+				grid-column: span 2
+		&-recommend
+			&_first
+				grid-row: 2 / 3
+				grid-column: 1 / 2
+			&_second
+				grid-row: 2 / 3
+				grid-column: 2 / 3
+	.recommend
+		&__image
+			margin-right: 50px
+	.top
+		grid-row: 7 / 8
+		grid-column: span 2
+		flex-direction: row
+		align-items: center
+		flex-wrap: wrap
+		justify-content: space-between
+		justify-items: space-between
+		padding-right: 0
+		&__item
+			width: 50%
+			padding: 20px 20px
+			margin-bottom: 0
+		&-button
+			width: 100%
+	.rectangle
+		margin-top: 40px
+		width: 98%
+		margin-bottom: 30px
 @media (max-width: 992px)
 	.container
 		max-width: 700px
@@ -25,6 +62,7 @@
 			&__item
 				font-size: 14px
 	.header
+		padding-bottom: 60px
 		&-book
 			&__about
 				width: 350px
@@ -47,6 +85,19 @@
 	.book
 		&-cover
 			padding: 40px 40px
+	.best
+		&-wrapper
+			grid-gap: 20px
+	.recommend
+		&__image
+			margin-right: 20px
+			width: 50%
+	.top
+		align-items: start
+		&__item
+			padding: 15px 15px
+		&__image
+			margin-right: 15px
 @media (max-width: 768px)
 	.container
 		max-width: 576px
@@ -132,6 +183,103 @@
 			padding: 70px 30px
 			&__image
 				width: 160px
+	.best
+		&__title
+			font-size: 28px
+			line-height: 36px
+		&-recommend
+			padding: 9px 18px 7px 9px
+	.recommend
+		&__book
+			&-name
+				font-size: 20px
+				line-height: 24px
+				margin-bottom: 10px
+				&_second
+					margin-bottom: 36px
+			&-category
+				font-size: 14px
+				line-height: 20px
+				margin-bottom: 10px
+			&-price
+				font-size: 16px
+				line-height: 20px
+				margin-bottom: 10px
+			&-button
+				margin-right: 10px
+				font-size: 14px
+				padding: 5px 12px
+	.top
+		padding: 12px 12px
+		&__item
+			padding: 5px 5px
+		&__book
+			&-name
+				font-size: 16px
+				line-height: 24px
+				margin-bottom: 12px
+			&-price
+				margin-bottom: 14px
+@media (max-width: 640px)
+	.best
+		&-wrapper
+			grid-template-columns: 1fr
+			grid-template-rows: repeat(5, min-content)
+			grid-column-gap: 0
+		&__title
+			&_recommend
+				grid-row: 1 / 2
+				grid-column: 	1
+			&_top
+				grid-row: 4 / 5
+		&-recommend
+			padding: 11px 23px 9px 11px
+			&_first
+				grid-row: 2 / 3
+			&_second, &_third, &_forth, &_fifth, &_sixth
+				display: none
+		&-button
+			grid-row: 3 / 4
+	.recommend
+		&__image
+			margin-right: 20px
+		&__book
+			&-name
+				font-size: 22px
+				line-height: 32px
+				margin-bottom: 16px
+			&-category
+				font-size: 16px
+				line-height: 22px
+				margin-bottom: 24px
+			&-price
+				font-size: 20px
+				line-height: 24px
+				margin-bottom: 24px
+			&-button
+				font-size: 16px
+				line-height: 22px
+				margin-right: 25px
+				padding: 7px 20px
+	.top
+		flex-direction: column
+		grid-row: 5 / 6
+		padding: 24px 24px
+		&__item
+			margin-bottom: 0
+			padding: 20px 60px 20px 20px
+			width: 90%
+		&__image
+			margin-right: 26px
+		&__book
+			&-name
+				font-size: 22px
+				line-height: 32px
+				margin-bottom: 15px
+			&-price
+				font-size: 20px
+				line-height: 24px
+				margin-bottom: 22px
 @media (max-width: 576px)
 	.container
 		width: 92%
@@ -159,6 +307,72 @@
 				width: 250px
 			&_top
 				margin-top: 36px
+	.top
+		padding: 15px 15px
+		&__item
+			padding: 20px 20px
+			width: 75%
+		&__book
+			&-name
+				font-size: 16px
+				line-height: 24px
+@media ( max-width: 380px)
+	.best
+		&-recommend
+			flex-direction: column
+			padding: 11px 11px 32px 11px
+			width: 100%
+		&__title
+			&_recommend
+				text-align: center
+				margin-bottom: 70px
+			&_top
+				text-align: center
+		&-button
+			padding: 14px 50px
+			&__name
+				font-size: 16px
+				line-height: 20px
+	.recommend
+		align-items: center
+		&__image
+			margin-right: 0
+			margin-top: -20%
+		&-about
+			display: flex
+			flex-direction: column
+			align-items: center
+		&__book
+			&-name
+				font-size: 20px
+				line-height: 24px
+				margin-top: 19px
+				margin-bottom: 12px
+			&-category
+				font-size: 14px
+				line-height: 20px
+				margin-top: 0
+				margin-bottom: 16px
+			&-price
+				font-size: 16px
+				line-height: 20px
+				margin-bottom: 20px
+			&-button
+				padding: 7px 26px
+	.top
+		&__item
+			padding: 0
+		&__image
+			width: 96px
+			margin-bottom: 32px
+			margin-right: 14px
+		&__book
+			&-name
+				margin-bottom: 12px
+			&-price
+				margin-bottom: 14px
+		&-about
+			justify-content: flex-start
 @media ( max-width: 320px)
 	.container
 		width: 280px
