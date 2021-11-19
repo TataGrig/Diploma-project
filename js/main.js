@@ -33,7 +33,7 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-arrow--right',
     prevEl: '.swiper-arrow--left',
   },
-
+}),
   // breakpoints: {
   //     1200: {
   //       slidesPerView: 4,
@@ -56,4 +56,16 @@ const swiper = new Swiper('.swiper', {
   //       spaceBetween: 20,
   //     }
   //   }
+const bookSlider = new Swiper('.unreliesed-swiper', {
+  loop: false,
+  slidesPerView: 5,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.unreliesed-button_right',
+      prevEl: '.unreliesed-button_left',
+    },
+
+    // effect: 'coverflow',
+    // },
 });
